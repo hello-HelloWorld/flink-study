@@ -1,0 +1,19 @@
+1. 什么是状态
+状态是针对每个算子而言，在每个并行任务中用于计算结果的数据
+可以看作是一个本地变量：一般放在本地内存；flink会统一进行数据类型的管理，方便进行读写传输以及容错保证
+
+2. 状态分类
+operator state：针对当前任务所有输入的数据可见，当前任务输入的所有数据都可以访问同一份状态
+keyed state：状态只针对当前key的数据可见，对每个key维护和管理一份状态实例
+
+3. flink有几种状态后端
+三种：内存级、文件级、RocksDB
+
+4. 使用keyed state，必须在keyBy之后的操作中（基于一个KeyedStream）
+
+5. 什么样的算子可以用状态，什么时候是有状态的计算？
+可以认为所有算子都可以有状态。
+map/filter/flatmap本来是无状态的，但是可以通过实现RichFunction，在其中自定义状态进行操作
+reduce/aggregate/window本来就是有状态，是flink底层直接管理的，我们也可以实现RichFunction自定义状态
+Process Function是一类特殊的函数类，是.process()方法的参数，它也实现了RichFunction接口，是一个特殊的富函数
+DataStream/KeyedStream/ConnectedStream/WindowedStream等等都可以调用.process()方法，传入的是不同的Process Function

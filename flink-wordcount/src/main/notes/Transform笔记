@@ -1,0 +1,16 @@
+1. keyBy
+基于key的hash code重分区；
+同一个key只能在一个分区内处理，一个分区内可以有不同的key的数据
+keyBy之后的KeyedStream上的所有操作，针对的作用域都只是当前的key
+
+2. 滚动聚合操作
+DataStream没有聚合操作，目前所有的聚合操作都是针对KeyedStream
+
+3. 多流转换算子
+split-select, connect-comap/coflatmap 成对出现
+先转换成 SplitStream，ConnectedStreams，然后再通过select/comap操作转换回来DataStream
+所谓coMap，其实就是基于ConnectedStreams的map方法，里面传入的参数是CoMapFunction
+
+4. 富函数
+是函数类的增强版，可以有生命周期方法，还可以获取运行时上下文，在运行时上下文可以对state进行操作
+flink有状态的流式计算，做状态编程，就是基于RichFunction的

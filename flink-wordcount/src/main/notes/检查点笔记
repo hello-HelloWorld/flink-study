@@ -1,0 +1,20 @@
+1. flink中的checkpoint，保存的是所有任务 状态 的快照
+这个状态要求是所有任务都处理完同一个数据之后的状态
+
+2. flink checkpoint算法
+基于 Chandy-Lamport 算法的分布式快照
+
+3. flink checkpoint中重要的概念
+barrier用于分隔不同的checkpoint，对于每个任务而言，收到barrier就意味着要开始做state的保存
+算法中需要对不同上游分区发来的barrier，进行对齐
+
+4. checkpoint存储位置，由state backend决定
+一般是放在远程持久化存储空间（fs或者rocksdb）
+jobmanager触发一个checkpoint操作，会把checkpoint中所有任务状态的拓扑结构保存下来
+
+5. barrier和watermark类似，都可以看作一个插入数据流中的特殊数据结构
+barrier在数据处理上跟watermark是两套机制，完全没有关系
+
+6. 将checkpoint和事务sink结合起来，再加上可重置偏移量的source，就可以实现端到端的Exactly-once状态一致性
+Flink-Kafka连接，实现精确一次状态一致性语义，
+核心就是source可重置偏移量，sink实现TwoPhaseCommitSinkFunction（底层就是将事务提交绑定在checkpoint）

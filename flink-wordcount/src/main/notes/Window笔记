@@ -1,0 +1,15 @@
+1. window操作两个主要步骤：
+窗口分配器（.window）,窗口函数（reduce，aggregate，apply，process）
+2. window类型
+通过窗口分配器来决定，时间窗口和计数窗口
+按照窗口起止时间（个数）的定义，可以有滚动窗口、滑动窗口、会话窗口
+
+滑动窗口中，每条数据可以属于多个窗口，属于size/slide个窗口
+会话窗口，窗口长度不固定，需要指定间隔时间
+
+3. 窗口函数
+窗口函数是基于当前窗口内的数据的，是有界数据集的计算，通常只在窗口关闭时输出一次
+增量聚合函数：ReduceFunction, AggregateFunction，流式处理过程
+全窗口函数；WindowFunction，ProcessWindowFunction，类似于批处理过程
+
+4. 程序默认的时间语义，是 Processing Time
