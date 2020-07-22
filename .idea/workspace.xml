@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b6ec5c5-9f19-4b9b-b69d-3fe52aa48626" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/notes/ProcessFunction.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/notes/Table api笔记" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/notes/Transform笔记" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/notes/Window笔记" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/notes/watermater" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/notes/检查点笔记" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/notes/状态管理笔记" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/notes/运行时架构笔记.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/SourceTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/wordcount/StreamWordCount.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/TransformTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/TransformTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/streamWordCount/StreamWordCount.scala" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/flink-wordcount/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,19 +54,93 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="966484806">
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="scala" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Scala" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="scala" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Scala" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/SourceTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="-1117">
+              <caret line="22" column="65" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="65" />
+              <folding>
+                <element signature="e#28#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/TransformTest.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-285">
+              <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+              <folding>
+                <element signature="e#28#102#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/wordcount/StreamWordCount.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="535">
+              <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+              <folding>
+                <element signature="e#29#81#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/wordcount/WordCount.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0.jar!/org/apache/flink/api/java/functions/KeySelector.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -85,6 +153,8 @@
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/wordcount/WordCount.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/streamWordCount/StreamWordCount.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/SourceTest.scala" />
+        <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/wordcount/StreamWordCount.scala" />
+        <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/TransformTest.scala" />
       </list>
     </option>
   </component>
@@ -97,7 +167,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../maven/apache-maven-3.3.9" />
+        <option name="mavenHome" value="E:/../maven/apache-maven-3.3.9" />
         <option name="userSettingsFile" value="E:\develop\maven\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -119,11 +189,6 @@
           <item name="flink-wordcount" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="flink-wordcount" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
       </expand>
       <select />
     </treeState>
@@ -141,7 +206,6 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,6 +236,13 @@
               <item name="flink-wordcount" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-wordcount" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -194,18 +265,39 @@
             <path>
               <item name="flink-study" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink-wordcount" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="apiStudy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-wordcount" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="wordcount" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-wordcount" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595259216779" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595411171522" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="F:/A大数据学习/大数据/尚硅谷大数据2020/20-flink/FlinkTutorial" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -234,12 +326,12 @@
   </component>
   <component name="RunManager" selected="Application.StreamWordCount">
     <configuration name="StreamWordCount" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.streamWordCount.StreamWordCount" />
+      <option name="MAIN_CLASS_NAME" value="com.study.wordcount.StreamWordCount" />
       <module name="flink-wordcount" />
       <option name="PROGRAM_PARAMETERS" value="-host hadoop102 -port 777" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.streamWordCount.*" />
+          <option name="PATTERN" value="com.study.wordcount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -288,13 +380,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11805000" />
+    <option name="totallyTimeSpent" value="18397000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33509833" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17377399" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -303,7 +395,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.45655876" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.020134227" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6439523" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -349,30 +441,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/wordcount/WordCount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/notes/ProcessFunction.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/streamWordCount/StreamWordCount.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="156">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding>
             <element signature="e#35#87#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/resources/sensor.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0.jar!/org/apache/flink/api/java/functions/KeySelector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/wordcount/StreamWordCount.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+          <folding>
+            <element signature="e#29#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/wordcount/WordCount.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/TransformTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+          <folding>
+            <element signature="e#28#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/SourceTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        <state relative-caret-position="-1117">
+          <caret line="22" column="65" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="65" />
+          <folding>
+            <element signature="e#28#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

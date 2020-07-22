@@ -53,7 +53,7 @@ object TransformTest {
       lowStream.print("low")
       allStream.print("all")*/
 
-    //4.合流，connect和mao一起使用
+    //4.合流，connect和map一起使用
     val waringStream: DataStream[(String, Double)] = highStream.map(
             data => (data.id, data.temperature)
 //      new MyMapper()

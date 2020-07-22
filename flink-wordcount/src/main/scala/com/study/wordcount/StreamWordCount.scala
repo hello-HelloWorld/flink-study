@@ -1,7 +1,12 @@
-package com.study.streamWordCount
+package com.study.wordcount
 
 import org.apache.flink.api.java.utils.ParameterTool
 import org.apache.flink.streaming.api.scala._
+
+/*
+* @author: helloWorld
+* @date  : Created in 2020/7/22 14:47
+*/
 
 //流处理
 object StreamWordCount {
