@@ -59,6 +59,7 @@ object StateTest {
       SensorReading(dataArr(0), dataArr(1).toLong, dataArr(2).toDouble)
     })
 
+
     val warningStream: DataStream[(String, Double, Double)] = dataStream
       //            .map(new MyMapper2())
       .keyBy("id")
