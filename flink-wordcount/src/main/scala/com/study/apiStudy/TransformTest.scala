@@ -55,20 +55,20 @@ object TransformTest {
 
     //4.合流，connect和map一起使用
     val waringStream: DataStream[(String, Double)] = highStream.map(
-            data => (data.id, data.temperature)
-//      new MyMapper()
+      data => (data.id, data.temperature)
+      //      new MyMapper()
     )
     val connectedStreams: ConnectedStreams[SensorReading, (String, Double)] = lowStream.connect(waringStream)
 
-  val resultStream: DataStream[Object] = connectedStreams.map(
-    lowTempData => (lowTempData.id, "normal"),
+    val resultStream: DataStream[Object] = connectedStreams.map(
+      lowTempData => (lowTempData.id, "normal"),
       warningData => (warningData._1, warningData._2, "high temp warning")
-  )
-    //    resultStream.print()
+    )
+    resultStream.print()
 
     //使用union进行合并
-    val value: DataStream[SensorReading] = highStream.union(lowStream,allStream)
-    value.print()
+    val value: DataStream[SensorReading] = highStream.union(lowStream, allStream)
+    //    value.print()
 
 
     environment.execute()

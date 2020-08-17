@@ -41,9 +41,7 @@ object KafkaSinkTest {
     //    dataStram.writeAsCsv("E:\\workspace\\flink-study\\flink-wordcount\\src\\main\\resources\\out.txt")
     inputStream.print()
     //输出数据到kafka
-    dataStram.addSink(
-      new FlinkKafkaProducer011[String]("hadoop102:9092", "sink", new SimpleStringSchema())
-    )
+    dataStram.addSink(new FlinkKafkaProducer011[String]("hadoop102:9092", "sink", new SimpleStringSchema()))
 
     environment.execute("flink sink test")
   }
