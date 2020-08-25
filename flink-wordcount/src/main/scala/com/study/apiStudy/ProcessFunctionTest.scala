@@ -22,7 +22,7 @@ object ProcessFunctionTest {
     environment.setParallelism(1)
 
     //接收socket文本数据
-    val inputStream: DataStream[String] = environment.socketTextStream("master1", 7777)
+    val inputStream: DataStream[String] = environment.socketTextStream("localhost", 7777)
     val dataStream: DataStream[SensorReading] = inputStream.map(data => {
       val dataArr: Array[String] = data.split(",")
       SensorReading(dataArr(0), dataArr(1).toLong, dataArr(2).toDouble)
@@ -48,18 +48,18 @@ class MyTempIncWarning(interval: Long) extends KeyedProcessFunction[Tuple, Senso
     val curTimeTs: Long = curTimeTsState.value()
 
     //将上次温度值的状态更新为当前数据的温度值
-    lastTempState.update(sensorReading.timestamp)
+    lastTempState.update(sensorReading.temperature)
 
     //判断当前温度值，如果比之前温度高，并且没有定时器的话，注册10秒后的定时器
-    if (sensorReading.timestamp > lastTemp && curTimeTs == 0) {
+    if (sensorReading.temperature > lastTemp && curTimeTs == 0) {
       val ts: Long = context.timerService().currentProcessingTime() + interval
       //注册定时器
       context.timerService().registerProcessingTimeTimer(ts)
-      //更新状态
+      //更新定时器时间戳的状态
       curTimeTsState.update(ts)
     }
     //如果温度下降，则删除定时器
-    else if (sensorReading.timestamp < lastTemp) {
+    else if (sensorReading.temperature < lastTemp) {
       //删除定时器
       context.timerService().deleteProcessingTimeTimer(curTimeTs)
       //清空状态
@@ -67,7 +67,11 @@ class MyTempIncWarning(interval: Long) extends KeyedProcessFunction[Tuple, Senso
     }
   }
 
-  //定时器触发，说明10秒内没有下降的温度，报警
+  //定时器触发，说明10秒内没有下降的温度，报警。onTimer是一个回调函数，当之前注册的定时器触发时调用
+  /*
+  * timestamp:定时器设定的触发时间戳
+  *
+  * */
   override def onTimer(timestamp: Long, ctx: KeyedProcessFunction[Tuple, SensorReading, String]#OnTimerContext, out: Collector[String]): Unit = {
     val key: String = ctx.getCurrentKey.asInstanceOf[Tuple1[String]].f0
     out.collect(key+"温度值连续" + interval / 1000 + "秒上升")

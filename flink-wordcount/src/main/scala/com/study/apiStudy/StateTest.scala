@@ -39,7 +39,7 @@ object StateTest {
     //    environment.setStateBackend(new RocksDBStateBackend("path",true))
 
     //checkPoint配置
-    //启用检查点，指定触发检查点的间隔时间(毫秒)
+    //启用检查点，指定触发检查点的间隔时间(毫秒),启动两个检查点之间的间隔时间
     environment.enableCheckpointing(1000L)
     //其他配置
     environment.getCheckpointConfig.setCheckpointingMode(CheckpointingMode.EXACTLY_ONCE)
@@ -63,11 +63,11 @@ object StateTest {
     val warningStream: DataStream[(String, Double, Double)] = dataStream
       //            .map(new MyMapper2())
       .keyBy("id")
-      //      .flatMap(new TempChangeWarningWithFlatmap(10.0))
-      .flatMapWithState[(String, Double, Double), Double]({
+      //            .flatMap(new TempChangeWarningWithFlatmap(10.0))
+      .flatMapWithState[(String, Double, Double), Double]({//第一个参数为输出的数据类型，第二个参数为状态的数据类型
       case (inputData: SensorReading, None) => (List.empty, Some(inputData.temperature))
       case (inputData: SensorReading, lastTemp: Some[Double]) => {
-        val diff = (inputData.temperature - lastTemp.get).abs
+        val diff = (inputData.temperature - lastTemp.get).abs //取绝对值
         if (diff > 10.0) {
           (List((inputData.id, lastTemp.get, inputData.temperature)), Some(inputData.temperature))
         } else {
@@ -111,7 +111,7 @@ class MyMapper2() extends RichMapFunction[SensorReading, Long] with ListCheckpoi
 // keyed state定义示例
 class MyProcessor extends KeyedProcessFunction[String, SensorReading, Int] {
   //lazy val myState: ValueState[Int] = getRuntimeContext.getState(new ValueStateDescriptor[Int]("my-state",classOf[Int]))
-  lazy val myListState: ListState[String] = getRuntimeContext.getListState(new ListStateDescriptor[String]("my-liststate", classOf[String]))
+  lazy val myListState: ListState[String] = getRuntimeContext.getListState(new ListStateDescriptor[String]("my-liststate", classOf[ String]))
   lazy val myMapState: MapState[String, Double] = getRuntimeContext.getMapState(new MapStateDescriptor[String, Double]("my-MapState", classOf[String], classOf[Double]))
   getRuntimeContext.getReducingState(new ReducingStateDescriptor[SensorReading](
     "my-reducingstate",
@@ -143,13 +143,13 @@ class TempChangeWarningWithFlatmap(stand: Double) extends RichFlatMapFunction[Se
   override def flatMap(value: SensorReading, out: Collector[(String, Double, Double)]): Unit = {
     //从状态中取出上次的温度值
     val lastTemp: Double = lastTempState.value()
-    //更新温度状态
+    //更新温度状态,这个状态是更新，只是一个状态值，及时不清空clear，也不会增加很多个
     lastTempState.update(value.temperature)
 
     //跟当前温度进行比较，如果大于阈值，就报警
     val abs: Double = (value.temperature - lastTemp).abs //绝对值
     if (abs > stand) {
-      out.collect(value.id, lastTemp, value.temperature)
+      out.collect((value.id, lastTemp, value.temperature))
     }
   }
 }

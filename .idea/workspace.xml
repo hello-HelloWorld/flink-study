@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b6ec5c5-9f19-4b9b-b69d-3fe52aa48626" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/KafkaTableTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/OutputTableTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/ScalarFunctionTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/TableApiTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/TableFunctionTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/TimeAndWindowTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/WindowTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/TransformTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/TransformTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/sinkTest/KafkaSinkTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/sinkTest/KafkaSinkTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/ProcessFunctionTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/ProcessFunctionTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/StateTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/StateTest.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/flink-wordcount/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,7 +56,7 @@
     <session id="966484806">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="14760" />
+          <entry key="scala" value="14989" />
           <entry key="txt" value="1" />
           <entry key="xml" value="8" />
         </counts>
@@ -71,44 +64,45 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Scala" value="14760" />
+          <entry key="Scala" value="14989" />
           <entry key="XML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="21" />
-          <entry key="java" value="30" />
-          <entry key="scala" value="61" />
-          <entry key="txt" value="8" />
+          <entry key="class" value="26" />
+          <entry key="java" value="50" />
+          <entry key="scala" value="77" />
+          <entry key="txt" value="9" />
           <entry key="watermater" value="1" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="21" />
-          <entry key="JAVA" value="30" />
-          <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Scala" value="61" />
+          <entry key="CLASS" value="26" />
+          <entry key="JAVA" value="50" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Scala" value="77" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
     </session>
@@ -116,81 +110,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/sinkTest/JdbcSinkTest.scala">
+        <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/KafkaTableTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1014">
-              <caret line="44" column="86" selection-start-line="44" selection-start-column="86" selection-end-line="44" selection-end-column="86" />
+            <state relative-caret-position="418">
+              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-wordcount/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/WindowTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1917" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/ProcessFunctionTest.scala">
+        <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/WindowTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="962">
-              <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+            <state relative-caret-position="286">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/notes/watermater">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/SideOutputTest.scala">
+        <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/TimeAndWindowTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="24" column="65" lean-forward="true" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/apache/bahir/flink-connector-redis_2.11/1.0/flink-connector-redis_2.11-1.0.jar!/org/apache/flink/streaming/connectors/redis/common/mapper/RedisMapper.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-connector-kafka-0.11_2.11/1.10.0/flink-connector-kafka-0.11_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5070">
-              <caret line="280" column="11" selection-start-line="280" selection-start-column="11" selection-end-line="280" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0-sources.jar!/org/apache/flink/api/common/serialization/DeserializationSchema.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-connector-kafka-0.11_2.11/1.10.0/flink-connector-kafka-0.11_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaConsumer011.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
+            <state relative-caret-position="227">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -203,6 +144,12 @@
         <option value="Scala Object" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>operator</find>
+      <find>explain</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -219,22 +166,22 @@
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/sinkTest/JdbcSinkTest.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/WindowTest.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/resources/sensor.txt" />
-        <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/ProcessFunctionTest.scala" />
-        <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/SideOutputTest.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/pom.xml" />
-        <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/StateTest.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/TableExample.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/resources/scriptFile.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/TableApiTest.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/KafkaTableTest.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/OutputTableTest.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/TimeAndWindowTest.scala" />
-        <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/WindowTest.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/ScalarFunctionTest.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/TableFunctionTest.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/TransformTest.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/SourceTest.scala" />
         <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/sinkTest/KafkaSinkTest.scala" />
+        <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/ProcessFunctionTest.scala" />
+        <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/SideOutputTest.scala" />
+        <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/StateTest.scala" />
+        <option value="$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/WindowTest.scala" />
       </list>
     </option>
   </component>
@@ -272,7 +219,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="1938" />
     <option name="height" value="1050" />
@@ -283,7 +230,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -365,19 +312,29 @@
             <path>
               <item name="flink-study" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink-wordcount" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="tableApiAndSql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flink-study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-wordcount" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597307285377" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1598332391682" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="F:/A大数据学习/大数据/尚硅谷大数据2020/20-flink/FlinkTutorial" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -404,7 +361,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TransformTest">
+  <component name="RunManager" selected="Application.ProcessFunctionTest">
+    <configuration name="ProcessFunctionTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.apiStudy.ProcessFunctionTest" />
+      <module name="flink-wordcount" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.apiStudy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ScalarFunctionTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.study.tableApiAndSql.ScalarFunctionTest" />
       <module name="flink-wordcount" />
@@ -420,19 +390,6 @@
     </configuration>
     <configuration name="TableFunctionTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.study.tableApiAndSql.TableFunctionTest" />
-      <module name="flink-wordcount" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.tableApiAndSql.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TimeAndWindowTest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.tableApiAndSql.TimeAndWindowTest" />
       <module name="flink-wordcount" />
       <extension name="coverage">
         <pattern>
@@ -471,19 +428,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TimeAndWindowTest" />
       <item itemvalue="Application.WindowTest" />
       <item itemvalue="Application.ScalarFunctionTest" />
       <item itemvalue="Application.TableFunctionTest" />
       <item itemvalue="Application.TransformTest" />
+      <item itemvalue="Application.ProcessFunctionTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProcessFunctionTest" />
         <item itemvalue="Application.TransformTest" />
         <item itemvalue="Application.TableFunctionTest" />
         <item itemvalue="Application.ScalarFunctionTest" />
         <item itemvalue="Application.WindowTest" />
-        <item itemvalue="Application.TimeAndWindowTest" />
       </list>
     </recent_temporary>
   </component>
@@ -510,18 +467,20 @@
       <workItem from="1596764122545" duration="10219000" />
       <workItem from="1597023028934" duration="51884000" />
       <workItem from="1597307458007" duration="2828000" />
-      <workItem from="1597627991181" duration="6129000" />
+      <workItem from="1597627991181" duration="42179000" />
+      <workItem from="1598005335776" duration="1000" />
+      <workItem from="1598234964216" duration="15123000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167075000" />
+    <option name="totallyTimeSpent" value="218249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49916527" visible="true" weight="0.20415778" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49916527" visible="true" weight="0.17537314" />
       <window_info id="Structure" order="1" sideWeight="0.5008347" side_tool="true" weight="0.19989339" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -530,8 +489,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32997763" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.37919462" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28635347" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.37919462" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.15771812" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -553,17 +512,17 @@
       <window_info anchor="right" id="SciView" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19349681" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49916527" visible="true" weight="0.15351813" />
+      <window_info id="Structure" order="1" sideWeight="0.5008347" side_tool="true" weight="0.19989339" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.50223714" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45078298" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32997763" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.37919462" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.15771812" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -571,7 +530,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.50223714" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.15659955" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.19127516" />
       <window_info anchor="bottom" id="JProfiler" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
@@ -591,257 +550,25 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/function/StatefulFunction.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/study/尚硅谷大数据/13_大数据技术之Scala/13_尚硅谷大数据技术之Scala/2.资料/scala-2.12.4/src/library/scala/package.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/study/尚硅谷大数据/13_大数据技术之Scala/13_尚硅谷大数据技术之Scala/2.资料/scala-2.12.4/src/library/scala/collection/TraversableOnce.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-api-scala-bridge_2.11/1.10.0/flink-table-api-scala-bridge_2.11-1.10.0.jar!/org/apache/flink/table/api/scala/TableConversions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-api-scala-bridge_2.11/1.10.0/flink-table-api-scala-bridge_2.11-1.10.0.jar!/org/apache/flink/table/api/scala/StreamTableEnvironment.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" selection-start-line="27" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-api-java/1.10.0/flink-table-api-java-1.10.0-sources.jar!/org/apache/flink/table/api/EnvironmentSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="212" column="23" selection-start-line="212" selection-start-column="23" selection-end-line="212" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-api-scala-bridge_2.11/1.10.0/flink-table-api-scala-bridge_2.11-1.10.0.jar!/org/apache/flink/table/api/scala/BatchTableEnvironment.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-api-java/1.10.0/flink-table-api-java-1.10.0-sources.jar!/org/apache/flink/table/api/TableEnvironment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="79" column="102" lean-forward="true" selection-start-line="79" selection-start-column="102" selection-end-line="79" selection-end-column="102" />
-          <folding>
-            <element signature="e#4037#4038#0" expanded="true" />
-            <element signature="e#4088#4089#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/resources/scriptFile.scala" />
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-api-java/1.10.0/flink-table-api-java-1.10.0-sources.jar!/org/apache/flink/table/descriptors/ConnectTableDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/TableExample.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/TableApiTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="89" column="32" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/resources/out2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/resources/sensor.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-api-scala_2.11/1.10.0/flink-table-api-scala_2.11-1.10.0.jar!/org/apache/flink/table/api/ImplicitExpressionOperations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="138" column="6" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/KafkaTableTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/OutputTableTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/TimeAndWindowTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-api-java/1.10.0/flink-table-api-java-1.10.0-sources.jar!/org/apache/flink/table/api/OverWindowedTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-api-java/1.10.0/flink-table-api-java-1.10.0-sources.jar!/org/apache/flink/table/api/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="910" column="13" lean-forward="true" selection-start-line="910" selection-start-column="13" selection-end-line="910" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-api-java/1.10.0/flink-table-api-java-1.10.0-sources.jar!/org/apache/flink/table/api/OverWindowPartitionedOrdered.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-common/1.10.0/flink-table-common-1.10.0.jar!/org/apache/flink/table/functions/ScalarFunction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/WindowTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1052">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/ScalarFunctionTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-common/1.10.0/flink-table-common-1.10.0.jar!/org/apache/flink/table/functions/TableFunction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/study/尚硅谷大数据/13_大数据技术之Scala/13_尚硅谷大数据技术之Scala/2.资料/scala-2.12.4/src/library/scala/collection/IndexedSeqOptimized.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-common/1.10.0/flink-table-common-1.10.0-sources.jar!/org/apache/flink/table/functions/TableFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="143" column="25" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/TableFunctionTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="52" column="54" lean-forward="true" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/DataStream.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="930" column="6" selection-start-line="930" selection-start-column="6" selection-end-line="930" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0-sources.jar!/org/apache/flink/api/java/functions/KeySelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0-sources.jar!/org/apache/flink/api/common/functions/ReduceFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/TransformTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/KeyedStream.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/StateTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2010">
-          <caret line="71" column="98" selection-start-line="71" selection-start-column="98" selection-end-line="71" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-connector-kafka-0.11_2.11/1.10.0/flink-connector-kafka-0.11_2.11-1.10.0.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaConsumer011.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-connector-kafka-0.11_2.11/1.10.0/flink-connector-kafka-0.11_2.11-1.10.0.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="110" column="11" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/SourceTest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1326">
@@ -853,9 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
           <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-          <folding>
-            <element signature="e#1868#1869#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -863,9 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
           <caret line="33" column="80" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="80" />
-          <folding>
-            <element signature="e#37#64#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -921,25 +642,277 @@
     <entry file="file://$PROJECT_DIR$/flink-wordcount/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/WindowTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1917" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/notes/watermater">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0-sources.jar!/org/apache/flink/api/common/functions/RichFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1358">
+          <caret line="112" column="9" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0-sources.jar!/org/apache/flink/api/common/functions/AbstractRichFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-286">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/SimpleTimerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-runtime-blink_2.11/1.10.0/flink-table-runtime-blink_2.11-1.10.0.jar!/org/apache/flink/table/runtime/operators/AbstractProcessStreamOperator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/TimerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/functions/KeyedProcessFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/runtime/io/StreamTaskNetworkInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/runtime/io/StreamOneInputProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0-sources.jar!/org/apache/flink/util/ExceptionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="356" selection-start-line="356" selection-end-line="356" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/runtime/tasks/StreamTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="473" selection-start-line="473" selection-end-line="473" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-runtime_2.11/1.10.0/flink-runtime_2.11-1.10.0.jar!/org/apache/flink/runtime/taskmanager/Task.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="299" selection-start-line="299" selection-end-line="299" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0-sources.jar!/org/apache/flink/api/common/state/ValueState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/resources/sensor.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/runtime/tasks/OneInputStreamTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/operators/KeyedProcessOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/DataStream.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="243" column="6" selection-start-line="243" selection-start-column="6" selection-end-line="243" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/OutputTag.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/functions/ProcessFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/WindowTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2028" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/SideOutputTest.scala">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="41" column="51" lean-forward="true" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/study/尚硅谷大数据/13_大数据技术之Scala/13_尚硅谷大数据技术之Scala/2.资料/scala-2.12.4/src/library/scala/Option.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-runtime_2.11/1.10.0/flink-runtime_2.11-1.10.0.jar!/org/apache/flink/runtime/state/filesystem/FsStateBackend.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-statebackend-rocksdb_2.11/1.10.0/flink-statebackend-rocksdb_2.11-1.10.0-sources.jar!/org/apache/flink/contrib/streaming/state/RocksDBStateBackend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="210" column="11" selection-start-line="210" selection-start-column="11" selection-end-line="210" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/study/尚硅谷大数据/13_大数据技术之Scala/13_尚硅谷大数据技术之Scala/2.资料/scala-2.12.4/src/library/scala/runtime/RichDouble.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0-sources.jar!/org/apache/flink/api/common/functions/RichFlatMapFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
-          <caret line="24" column="65" lean-forward="true" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-runtime_2.11/1.10.0/flink-runtime_2.11-1.10.0.jar!/org/apache/flink/runtime/state/memory/MemoryStateBackend.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/StateTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/apiStudy/ProcessFunctionTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="962">
-          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+        <state relative-caret-position="1014">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0-sources.jar!/org/apache/flink/util/Collector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-planner_2.11/1.10.0/flink-table-planner_2.11-1.10.0.jar!/org/apache/flink/table/runtime/TableFunctionCollector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.10.0/flink-streaming-java_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/checkpoint/ListCheckpointed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3484">
+          <caret line="156" column="9" selection-start-line="156" selection-start-column="9" selection-end-line="156" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0-sources.jar!/org/apache/flink/api/common/restartstrategy/RestartStrategies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/KeyedStream.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14534">
+          <caret line="591" column="40" selection-start-line="591" selection-start-column="40" selection-end-line="591" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/study/尚硅谷大数据/13_大数据技术之Scala/13_尚硅谷大数据技术之Scala/2.资料/scala-2.12.4/src/library/scala/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/study/尚硅谷大数据/13_大数据技术之Scala/13_尚硅谷大数据技术之Scala/2.资料/scala-2.12.4/src/library/scala/collection/TraversableOnce.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-streaming-scala_2.11/1.10.0/flink-streaming-scala_2.11-1.10.0-sources.jar!/org/apache/flink/streaming/api/scala/StreamExecutionEnvironment.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6266">
+          <caret line="276" column="6" selection-start-line="276" selection-start-column="6" selection-end-line="276" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/KafkaTableTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/TimeAndWindowTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-wordcount/src/main/scala/com/study/tableApiAndSql/WindowTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
